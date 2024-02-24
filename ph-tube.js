@@ -7,6 +7,7 @@ const loadAllCategories = async () => {
     const res = await fetch(apiUrl);
     const data = await res.json();
     const categories = data.data;
+    console.log(categories);
     displayAllCategories(categories);
 }
  
@@ -35,6 +36,7 @@ const loadCategoryResult = async () => {
     const res = await fetch(apiUrl);
     const data = await res.json();
     const videos = data.data;
+    console.log(videos);
     displayCategoryResult(videos);
 }
 const displayCategoryResult = videos => {
